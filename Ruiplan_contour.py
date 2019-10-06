@@ -1,7 +1,4 @@
-# Script recorded 08 Feb 2017
-
 #   RayStation version: 4.7.5.4
-#   Selected patient: ...
 
 import os
 import time
