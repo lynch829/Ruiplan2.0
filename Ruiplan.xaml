@@ -1,0 +1,40 @@
+<!--RuiPlan_beam.xaml
+   The corresponding XAML file of RuiPlan.py-->
+<Window
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     Title="RuiPlan" Icon="\\SQL\Share\Public\rayx\ruiplan.ico"  Height="Auto" Width="300"
+     SizeToContent="Height">
+   <DockPanel>
+      <TextBlock Text="RuiPlan V2.5 Programed By Louazhao"
+                 Margin="20,5,5,5" DockPanel.Dock="Top"/>
+      <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+          <Label Content="Accelerator:" Margin="20,2,2,2"/>
+          <ComboBox Name="SelectAC" Width="130" Margin="2"/>
+      </StackPanel>
+      <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+          <Label Content="Beams:       " Margin="22,2,2,2"/>
+          <ComboBox Name="SelectBM" Width="130" Margin="2"/>
+      </StackPanel>
+      <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+          <Label Content="F Dose [cGy]:"
+                 Margin="10,2,2,2"/>
+          <TextBox Width="130" Margin="6,2,2,2" Name="fd"/>
+       </StackPanel>
+      <Grid DockPanel.Dock="Top" Name="opck">
+          <CheckBox Content="            Optimization" Margin="30,8,8,8" Background="Red"/>
+      </Grid>
+       <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"
+                   Visibility="Collapsed" Name="RelVolPanel">
+          <TextBlock Margin="20,2,2,2" Name="Ptext"
+                     TextWrapping="Wrap" Width="800"/>
+          </StackPanel>
+          <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom"
+                      HorizontalAlignment="Center">
+              <Button Content="Confirm" Margin="2,5,2,5" Width="70"
+                      Click="ConfirmClicked"/>
+              <Button Content="Close" Margin="2,5,2,5" Width="70"
+                      Click="CloseClicked"/>
+          </StackPanel>
+      </DockPanel>
+  </Window>
