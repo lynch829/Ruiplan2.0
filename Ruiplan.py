@@ -1,3 +1,5 @@
+#   RayStation version: 4.7.5.4
+
 import socket
 import wpf
 from System.Windows import *
